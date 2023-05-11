@@ -20,5 +20,6 @@
         {{ $slot }}
 
         @livewire('notifications')
+        @livewire('livewire-ui-spotlight')
     </body>
 </html>
