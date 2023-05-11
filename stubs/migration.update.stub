@@ -11,12 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('profiles', function (Blueprint $table) {
-            $table->id();
-            $table->uuid('uuidd')->unique();
-            $table->text('bio')->nullable();
-            $table->foreignId('user_id')->index()->constrained()->cascadeOnDelete();
-            $table->timestamps();
+        Schema::table('{{ table }}', function (Blueprint $table) {
+            //
         });
     }
 
@@ -25,6 +21,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('profiles');
+        Schema::table('{{ table }}', function (Blueprint $table) {
+            //
+        });
     }
 };
