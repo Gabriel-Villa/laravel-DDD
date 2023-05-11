@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('profiles', function (Blueprint $table) {
             $table->id();
-            $table->uuid('uuidd')->unique();
+            $table->uuid('uuid')->unique();
             $table->text('bio')->nullable();
             $table->foreignId('user_id')->index()->constrained()->cascadeOnDelete();
             $table->timestamps();
