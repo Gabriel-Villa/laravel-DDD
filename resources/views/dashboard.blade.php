@@ -1,17 +1,23 @@
 <x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot>
+    <div class="min-h-full">
+        <header class="bg-24 bg-indigo-600">
+            <div class="mx-w-3xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-4">
+                <div class="relative py-5 flex items-center justify-center lg:justify-between">
+                    <div class="absolute left-0 flex-shrink-0 lg:satic">
+                        <a href="">
+                            <span class="sr-only">Workflow</span>
+                            <img src="https://tailwindui.com/img/logos/workflow-mark-indigo-300.svg" alt="" class="h-8 w-auto">
+                        </a>
+                    </div>
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900 dark:text-gray-100">
-                    {{ __("You're logged in!") }}
+                    <div class="hidden lg:ml-4 lg:flex lg:items-center lg:pr-0.5">
+                        <button class="flex shrink-0 p-1 text-indigo-200 rounded-full hover:text-white hover:bg-white focus:outline">
+
+                        </button>
+                    </div>
+
                 </div>
             </div>
-        </div>
+        </header>
     </div>
 </x-app-layout>
