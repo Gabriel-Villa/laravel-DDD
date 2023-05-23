@@ -38,4 +38,11 @@ class User extends Authenticatable
         return $this->hasOne(Profile::class, 'user_id');
     }
 
+    private $usuario;
+
+    public function getUsuario()
+    {
+        return $this->usuario = 'hola';
+    }
+
 }
